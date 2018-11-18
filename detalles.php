@@ -57,7 +57,7 @@
 								?>
 
 						<tr style="border: none;">
-							<td style="border: none;"><img src="imagenes/<?php echo $libro['Imagen'];?>" alt="imagen libro 1" class="center"></td>
+							<td style="border: none;"><img src="php/<?php echo $libro['Imagen'];?>" alt="imagen libro 1" class="center"></td>
 							<td style="border: none; vertical-align: middle;" class="centerT">
 								<?php echo $libro['Titulo']. "<br><br>". $libro['Autor'];?>
 							</td>

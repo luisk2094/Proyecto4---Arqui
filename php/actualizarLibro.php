@@ -56,5 +56,5 @@ mysqli_close($con);
   echo "Problemas al actualizar los datos";
 }
 
-//header('Location: ../index.php');
+header('Location: ../index.php');
 ?>

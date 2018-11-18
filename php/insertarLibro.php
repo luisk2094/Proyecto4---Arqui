@@ -14,7 +14,7 @@ $aux = $_FILES['imagen']['name'];
 $ext = substr($aux,-4);
 $nombreFichero = basename($_FILES['imagen']['tmp_name']).$ext;
 $path = "D:/Programas/Xampp/htdocs/proyecto4/imagenes";
-$absoluteP = "$path./$nombreFichero";
+$absoluteP = getcwd()."/$nombreFichero";
 
 if (((strpos($_FILES['imagen']['name'], "gif") || strpos($_FILES['imagen']['name'], "jpeg") ||
  strpos($_FILES['imagen']['name'], "jpg")) || strpos($_FILES['imagen']['name'], "png")))
