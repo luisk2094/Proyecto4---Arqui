@@ -14,8 +14,8 @@ include ('conectarBD.php');
 $aux = $_FILES['imagen']['name'];
 $ext = substr($aux,-4);
 $nombreFichero = basename($_FILES['imagen']['tmp_name']).$ext;
-$path = "D:/Programas/Xampp/htdocs/proyecto4/imagenes";
-echo getcwd();
+$path = "app/imagenes";
+//echo getcwd();
 $absoluteP = "$path./$nombreFichero";
 
 if (((strpos($_FILES['imagen']['name'], "gif") || strpos($_FILES['imagen']['name'], "jpeg") ||
