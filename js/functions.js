@@ -9,3 +9,8 @@ $( document ).ready(function() {
 function CrearEnlace(url) {
     location.href=url;
 }
+
+$('#tablasPHP').DataTable( {
+    paging: true,
+    searching: true,
+} );
