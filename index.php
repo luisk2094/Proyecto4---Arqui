@@ -62,7 +62,7 @@
 
 							while ($libro = mysqli_fetch_array($consulta)){
 								echo "<tr>";
-								echo "<td><img src='php/".$libro['Imagen']."' alt='".$libro['ID']."' class='center'></td>
+								echo "<td><img src='/php/".$libro['Imagen']."' alt='".$libro['ID']."' class='center'></td>
 								<td>".$libro['Titulo']."</td>
 								<td>".$libro['Autor']."</td>
 								<td>".$libro['Idioma']."</td>

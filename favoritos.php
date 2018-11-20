@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
 </head>
 
 <body>
@@ -42,7 +45,7 @@
 
 		<section id="content">
 			<div class="table-responsive">
-				<table class="table table-hover">
+				<table class="table table-hover" id="tablasPHP">
 					<thead>
 						<tr>
 							<th>Image</th>
@@ -60,7 +63,7 @@
 
 							while ($libro = mysqli_fetch_array($consulta)){
 								echo "<tr>";
-								echo "<td><img src='php/".$libro['Imagen']."' alt='".$libro['ID']."' class='center'></td>
+								echo "<td><img src='/php/".$libro['Imagen']."' alt='".$libro['ID']."' class='center'></td>
 								<td>".$libro['Titulo']."</td>
 								<td>".$libro['Autor']."</td>
 								<td>".$libro['Idioma']."</td>
